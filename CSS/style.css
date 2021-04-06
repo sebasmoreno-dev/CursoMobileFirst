@@ -23,6 +23,220 @@
     box-sizing: border-box;
 }
 html {
-    62.5%
+    font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+}
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+header img {
+    width: 150px;
+    height: 24px;
+    margin-top: 40px;
+    align-self: center;
+}
+.header--title-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 50px;
+}
+.header--title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem; /* dimesión entre lineas */
+    color: var(--just-white);
+}
+.header--title-container p {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+.header--title-container .header--button {
+    position: absolute;                         /* cuando estemos en position absolute podemos utilziar top,botton, left right para poder mover en */ 
+    left: calc(50% - 118px);                        /* para calcular y poder centrar */
+    top: 270px;                                    /* esa pocision mi contenerdor o elemento*/
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    /* sombra */
+    box-shadow: 0px 4px 8px rgb(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+.header--button span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url("../assets/iconos/down-arrow.svg");
+}
+main {
+    width: 100%;
+    min-width: 320px;
+    height: auto;  /* el mismo contenido va definiendo la altura del main */
+    background-color: var(--off-white);
+}
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;   /* para dejar espacio en la parte de arriba y de abajo */
+    text-align: center;
+}
+.main-exchange-container--title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.main-exchange-container .backgroundImg {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url(../assets/imgs/Bitcoin.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;           /* hace que la imagen se estire sin que se rompa */
+}
+.main-exchange-container h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.main-exchange-container p {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+}
+.main-currency-table,
+.main-commission-table {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: "inter" sans-serif;
+}
+.main-currency-table .currency-table--title,
+.main-commission-table .commission-table--title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;                   
+    line-height: 2.3rem;                 
+    color: var(--bitcoin-orange);
+} 
+.main-commission-table .commission-table--title {
+    color: var(--secondary-blue);
+    margin-top: 90px;
+}
+
+.currency-table--container,
+.commission-table--container 
+{
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+.currency-table--container table,
+.commission-table--container table {
+    width: 100%;
+    height: 100%;
+}
+.currency-table--container td,
+.commission-table--container td {
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;                       /* grosor de la fuente */
+    line-height: 1.9rem;                  /* alto de fuente */
+    color: var(--grey);
+    background-color: var(--just-white);
+}
+.currency-table--container .table__top-left,
+.commission-table--container .table__top-left {
+    border-radius: 15px 0 0 0;
+}
+.currency-table--container .table__top-right,
+.commission-table--container .table__top-right {
+    border-radius: 0 15px 0 0;
+}
+.currency-table--container .table__bottom-left,
+.commission-table--container .table__top-right 
+{
+    border-radius: 0 0 0 15px;
+}
+.currency-table--container .table__bottom-right,
+.commission-table--container .table__bottom-right {
+    border-radius: 0 0 15 0px;
+}
+.currency-table--container .table__right,
+.commission-table--container .table__right 
+{
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+.currency-table--container .down,
+.currency-table--container .up
+{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url("../assets/iconos/trending-down.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.currency-table--container .up {
+    background-image: url("../assets/iconos/trending-up.svg");
+}
+.currency-table--date,
+.commission-table--date
+{
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+}
+.commission-table--date {
+    background-color: var(--soft-blue);
+}
+.currency-table--date p,
+.commission-table--date p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+    
 }
