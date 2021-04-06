@@ -64,3 +64,29 @@ header img {
     line-height: 1.8rem;
     color: var(--soft-orange);
 }
+.header--title-container .header--button {
+    position: absolute;                         /* cuando estemos en position absolute podemos utilziar top,botton, left right para poder mover en */ 
+    left: calc(50% - 118px);                        /* para calcular y poder centrar */
+    top: 270px;                                    /* esa pocision mi contenerdor o elemento*/
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    /* sombra */
+    box-shadow: 0px 4px 8px rgb(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+.header--button span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url("../assets/iconos/down-arrow.svg");
+}
