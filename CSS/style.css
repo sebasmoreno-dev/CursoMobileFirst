@@ -371,6 +371,7 @@ main {
     line-height: 1.8rem;
     color: #757575;
 }
+/* scroll */
 .plans-container--slider {
     display: flex;
     height: 316px;
@@ -383,10 +384,10 @@ main {
     position: relative;
     scroll-snap-align: center;
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px 30px 0;   /* arriba - izq/der - abajo */
+    margin: 50px 5px 0;   /* arriba - izq/der - abajo */
     padding: 0 15px;          /* para que el contenedor empiece a centrar a su contenido y tenga un borde */
     background-color: var(--just-white);
     border-radius: 15px;
@@ -460,4 +461,31 @@ main {
     background-image: url("../assets/iconos/orange-right-arrow.svg");
     vertical-align: text-bottom;
 }
-
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .left ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.left li {
+    margin: 10px 0;
+}
+.left a {
+    text-decoration: none;
+    color: var(--just-white);
+}
+.footer__left a:hover {
+    text-decoration: underline;
+}
