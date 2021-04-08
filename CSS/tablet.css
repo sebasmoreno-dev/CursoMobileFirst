@@ -1,0 +1,14 @@
+.main-tables-container {
+    display: flex;
+    width: 930px;
+    margin: 0 auto;
+}
+.product-cards--container {
+    display: flex;  
+    flex-wrap: wrap;       /* para que el contenido se empiece acomodar debemos usar flex wrap para que no suceda un overflow */
+    width: 930px;
+    margin: 0 auto;           /* para que a medida que cresca la pagia se que acomode solo, ya que estos contenedores no van a crecer*/
+}
+.plans-container--slider {
+    justify-content: center;
+}
