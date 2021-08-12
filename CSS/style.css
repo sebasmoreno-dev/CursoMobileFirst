@@ -111,28 +111,28 @@ main {
     margin: 0 auto;
 }
 .main-exchange-container .backgroundImg {
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 280px;
     margin: 0 auto;
     margin-bottom: 50px;
-    background-image: url("../assets/imgs/Bitcoin.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;           /* hace que la imagen se estire sin que se rompa */
-    /* animation-name: imgsBitcoin; */           /* manejo de animaciones */
-    /* animation-duration: 20s;
-    animation-delay: 7s;
+    border-radius: 50%;
+    animation-name: imgsBitcoin;           /* manejo de animaciones */
+    animation-duration: 14s;
+    animation-delay: 3s;
     position: relative;
-    animation-iteration-count: infinite; */
+    animation-iteration-count: infinite;
 }
-/* @keyframes imgsBitcoin {
-    /* 0% {left: 0px;top:0px;}
+@keyframes imgsBitcoin {
+   /*  0% {left: 0px;top:0px;}
     25% {left: 300px;top:0px;}
     50% {left: -300px;top:0px;} */
-    /* 50% {background-color: var(--black);} */
+    50% {background-color: var(--black);}
     /* 75% {left: -1px;top: 0px;}
     100% {left: -1px;top:0px;} */
-} */
+}
 .main-exchange-container h2 {
     margin-bottom: 30px;
     font-size: 2.4rem;
